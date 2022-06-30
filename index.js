@@ -21,7 +21,7 @@ app.get('/integrantes', function(req, res) {
 
 app.get('/', async(_req, res, _next) => {
     try {
-        res.send("Prueba pipeline");
+        res.send("Prueba pipeline clase");
     } catch (error) {
         healtcheck.message = error;
         res.status(503).send();
