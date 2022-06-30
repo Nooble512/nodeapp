@@ -8,6 +8,10 @@ phases:
       - npm install
   pre_build:
     commands:
+      - echo Logging in to Docker Hub...
+      - DOCKER_USERNAME=nooble
+      - DOCKER_PASSWORD=9tpHFPqbjF87
+      - docker login -u="${DOCKER_USERNAME}" -p="${DOCKER_PASSWORD}"
       - echo Logging in to Amazon ECR...
       - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
