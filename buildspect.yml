@@ -1,12 +1,6 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      nodejs: latest  
-    commands:
-      - echo Installing Mocha...
-      - npm install -g mocha
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
