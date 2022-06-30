@@ -21,7 +21,7 @@ app.get('/integrantes', function(req, res) {
 
 app.get('/', async(_req, res, _next) => {
     try {
-        res.send("Ok");
+        res.send("All ok");
     } catch (error) {
         healtcheck.message = error;
         res.status(503).send();
