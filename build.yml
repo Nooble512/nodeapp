@@ -9,7 +9,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Docker Hub...
-      - DOCKER_USERNAME=nooble
+      - DOCKER_USERNAME=nooble513
       - DOCKER_PASSWORD=9tpHFPqbjF87
       - docker login -u="${DOCKER_USERNAME}" -p="${DOCKER_PASSWORD}"
       - echo Logging in to Amazon ECR...
